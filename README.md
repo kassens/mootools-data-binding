@@ -31,8 +31,8 @@ Bind multiple objects together that implement the basic model/view methods. Any 
 	var myController = new Controller();
 	var myView = new Element('input',{type:'text'});
 	
-	myController.addbinding('name', myModel);
-	myController.addbinding('name', myView, 'value');
+	myController.addBinding('name', myModel);
+	myController.addBinding('name', myView, 'value');
 	
 	myModel.get('name'); // returns "Tom"
 	myView.get('value'); // returns "Tom"

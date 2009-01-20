@@ -1,6 +1,3 @@
-
-try{console.log( "domready" );}catch(e){};
-
 var myController = new SubtleController.Hash();
 
 // =========
@@ -18,10 +15,10 @@ var myModel = new Hash({
 var myView = $('view');
 
 var myView_Name = new Element('input',{type:'text'}).inject(myView);
-myView_Name.addEvent('keyup', function(){ this.fireEvent('change'); })
+myView_Name.addEvent('keyup', function(){ this.fireEvent('change'); });
 
 var myView_Name1 = new Element('input',{type:'text'}).inject(myView);
-myView_Name1.addEvent('keyup', function(){ this.fireEvent('change'); })
+myView_Name1.addEvent('keyup', function(){ this.fireEvent('change'); });
 
 var myView_Name2 = new Element('h1').inject(myView);
 
